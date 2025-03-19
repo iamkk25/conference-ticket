@@ -1,0 +1,40 @@
+.header {
+	padding: 2rem;
+	text-align: center;
+	text-wrap: balance;
+}
+
+.header-logo {
+	width: 175px;
+}
+
+.header-title {
+	margin-top: 2rem;
+	font-size: clamp(1.9rem, 5vw, 3rem);
+	line-height: 1.2;
+}
+
+.header-text {
+	margin-top: 1rem;
+	font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.customer-name {
+	background-image: var(--Gradient-text);
+	background-clip: text;
+	color: transparent;
+}
+
+.customer-email {
+	color: var(--Orange-500);
+}
+
+@media screen and (width> 1024px) {
+	.header-logo {
+		width: 200px;
+	}
+
+	.header-text {
+		font-size: 1.1rem;
+	}
+}

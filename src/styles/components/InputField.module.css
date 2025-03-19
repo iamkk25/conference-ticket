@@ -1,0 +1,29 @@
+.field {
+	margin-bottom: 1rem;
+}
+
+.field-label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.field > input {
+	display: inline-block;
+	width: 100%;
+	padding: 1rem;
+	border: 2px solid var(--Neutral-500);
+	border-radius: 10px;
+	background-color: var(--grey);
+	color: var(--Neutral-0);
+	font-size: 1rem;
+}
+
+.field > input:focus-visible,
+.field > input:hover {
+	outline: 2px solid var(--Neutral-500);
+	outline-offset: 2px;
+}
+
+.field > input::placeholder {
+	color: var(--Neutral-500);
+}

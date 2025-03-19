@@ -1,0 +1,91 @@
+.ticket-container {
+	padding: 1rem;
+}
+
+.ticket-details-container {
+	position: relative;
+	min-width: 332px;
+	max-width: 430px;
+	aspect-ratio: 16/9;
+	margin: auto;
+	padding: 1rem;
+	background-image: url(/public/assets/images/pattern-ticket.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.conf-details,
+.customer-details {
+	display: flex;
+	gap: 0.7rem;
+	align-items: center;
+}
+
+.customer-details {
+	position: absolute;
+	left: 1rem;
+	bottom: 23%;
+}
+
+.conf-icon-container,
+.customer-profile-container {
+	width: 50px;
+	height: 50px;
+}
+
+.customer-profile-container {
+	border: 1px solid var(--Neutral-500);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.conf-place {
+	color: var(--Neutral-300);
+	font-size: 0.9rem;
+}
+
+.customer-name {
+	font-weight: 500;
+}
+
+.github-username {
+	color: var(--Neutral-300);
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+}
+
+.github-icon {
+	width: 15px;
+}
+
+.ticket-number {
+	position: absolute;
+	right: 1%;
+	top: 32%;
+	font-size: 1.4rem;
+	color: var(--Neutral-500);
+	rotate: 90deg;
+}
+
+.get-ticket-btn {
+	display: block;
+	width: fit-content;
+	margin: auto;
+	padding: 1rem;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--Orange-500);
+	color: var(--Neutral-900);
+	font-size: 1.2rem;
+	font-weight: bolder;
+	font-family: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.get-ticket-btn:hover,
+.get-ticket-btn:focus-visible {
+	outline: 2px solid var(--Neutral-500);
+	outline-offset: 2px;
+}

@@ -1,0 +1,28 @@
+.form {
+	--grey: #231e3c66;
+	width: 90%;
+	margin: auto;
+
+	@media screen and (width>=650px) {
+		width: 50%;
+	}
+}
+
+.ticket-generate-btn {
+	width: 100%;
+	padding: 1rem;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--Orange-500);
+	color: var(--Neutral-900);
+	font-size: 1.2rem;
+	font-weight: bolder;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.ticket-generate-btn:hover,
+.ticket-generate-btn:focus-visible {
+	outline: 2px solid var(--Neutral-500);
+	outline-offset: 2px;
+}
