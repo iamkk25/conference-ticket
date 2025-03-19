@@ -35,7 +35,7 @@ function Form() {
 		const errors = {};
 
 		if (!validFileSize(imgFile)) {
-			errors.avatar = "File too large. Plase upload a photo under 500KB.";
+			errors.avatar = "File too large. Please upload a photo under 500KB.";
 		}
 
 		if (!imgFile || imgFile.size === 0) {
