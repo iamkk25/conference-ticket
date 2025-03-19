@@ -21,7 +21,7 @@ function Form() {
 	function onFileUpload(file) {
 		if (file && !validFileSize(file)) {
 			console.log(file);
-			setFileSizeError("File too large. Plase upload a photo under 500KB.");
+			setFileSizeError("File too large. Please upload a photo under 500KB.");
 		} else {
 			setFileSizeError("");
 		}
