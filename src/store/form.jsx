@@ -8,6 +8,7 @@ const initialValue = {
 		email: "",
 		github: "",
 		ticketId: "",
+		date: "",
 	},
 	setFormData: () => {},
 };

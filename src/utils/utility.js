@@ -66,3 +66,12 @@ export function ticketIdGenerator() {
 // ticket.generateId();
 // console.log(`Generated ticket: ${ticket.ticketId}`);
 // console.log(`Ticket Cache: ${ticket.getCachedTicketIds().size}`)
+
+export function formatDate(date) {
+    const intl = new Intl.DateTimeFormat('en-IN', {
+        month: 'short',
+        day: '2-digit',
+        year: 'numeric',
+    });
+    return intl.format(date);
+}

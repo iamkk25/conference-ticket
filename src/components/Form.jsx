@@ -10,7 +10,7 @@ import {
 } from "../utils/validateFile";
 import { useNavigate } from "react-router";
 import { useFormContext } from "../store/form";
-import { ticketIdGenerator } from "../utils/utility";
+import { formatDate, ticketIdGenerator } from "../utils/utility";
 
 function Form() {
 	const [imgFile, setImgFile] = useState(null);
@@ -69,7 +69,11 @@ function Form() {
 
 		console.log("sending credentials...");
 		// navigate("/ticket", { state: { userData } });
-		setFormData({ ...userData, ticketId: ticketIdGenerator() });
+		setFormData({
+			...userData,
+			ticketId: ticketIdGenerator(),
+			date: formatDate(new Date()),
+		});
 		navigate("/ticket");
 
 		// return { errors, userData };
