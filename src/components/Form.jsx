@@ -19,11 +19,13 @@ function Form() {
 	const { setFormData } = useFormContext();
 
 	function onFileUpload(file) {
+		if (file === null || (file && validFileSize(file))) {
+			setFileSizeError("");
+		}
+
 		if (file && !validFileSize(file)) {
 			console.log(file);
 			setFileSizeError("File too large. Please upload a photo under 500KB.");
-		} else {
-			setFileSizeError("");
 		}
 		console.log(file);
 		setImgFile(file);
